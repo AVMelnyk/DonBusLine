@@ -1,4 +1,4 @@
-package com.melnyk;
+package com.donbusline;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;

@@ -1,4 +1,4 @@
-<%@ page import="com.melnyk.CallbackModel "%>
+<%@ page import="com.donbusline.CallbackModel "%>
 <link rel="stylesheet" type ="text/css" href="styles/main.css"/>
 <%@page pageEncoding="UTF-8" %>
 <!DOCTYPE html>
