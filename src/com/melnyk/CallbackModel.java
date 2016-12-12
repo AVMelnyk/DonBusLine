@@ -1,3 +1,5 @@
+package com.melnyk;
+
 import java.io.IOException;
 
 public class CallbackModel {

@@ -1,3 +1,5 @@
+package com.melnyk;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -10,7 +12,7 @@ public class DonBusLine extends HttpServlet{
         String path = request.getContextPath();
         response.setContentType("text/html;charset=utf-8");
         request.setAttribute("path",path);
-        request.getRequestDispatcher("/WEB-INF/index.jsp").forward(request, response);
+        request.getRequestDispatcher("/index.jsp").forward(request, response);
 
     }
     @Override
@@ -21,6 +23,6 @@ public class DonBusLine extends HttpServlet{
         new CallbackModel(name, number).notifyRecipient();
         request.setAttribute("name", name);
         response.setContentType("text/html;charset=utf-8");
-        request.getRequestDispatcher("/WEB-INF/submit.jsp").forward(request, response);
+        request.getRequestDispatcher("/main.jsp").forward(request, response);
     }
 }

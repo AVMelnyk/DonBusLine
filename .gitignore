@@ -1,4 +1,4 @@
-target/*
+# Created by .ignore support plugin (hsz.mobi)
 .idea/*
-TODO.txt
-Route.jpg
+/DonBusLine.iml
+out/*

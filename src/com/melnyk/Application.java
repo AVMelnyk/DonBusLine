@@ -1,3 +1,5 @@
+package com.melnyk;
+
 import java.util.Map;
 
 public class Application {
