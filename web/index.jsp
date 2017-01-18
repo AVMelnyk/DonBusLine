@@ -83,7 +83,7 @@
     </table>
 </section>
 <section id='form_section'>
-    <form method="POST" action="main.jsp"/>
+    <form method="POST" action="${path}/index"/>
     <table="dataform" classborder ="0"><tr><td valign="top">
     <caption class="datacaption">Пожалуйста, введите ваши данные. Мы вам перезвоним.</caption>
     <br>
