@@ -85,7 +85,7 @@
 <section id='form_section'>
     <div id="app">
 			<form id="f" method="POST" action="${path}/index" class="callback callback_pristine">
-			<table>
+			<table class="datatable">
 			<caption class="datacaption">Пожалуйста, введите ваши данные. Мы вам перезвоним.</caption>
 			<tr>
 				<td>Имя:</td>
@@ -104,7 +104,7 @@
 		</form>
 		</div>
 </section>
-<script src="index.js"></script>
-<script src="libphonenumber-js.min.js"></script>
+<script src="scripts/index.js"></script>
+<script src="scripts/libphonenumber-js.min.js"></script>
 </body>
 </html>
