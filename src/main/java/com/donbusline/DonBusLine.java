@@ -22,7 +22,7 @@ public class DonBusLine extends HttpServlet{
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
         request.setCharacterEncoding("utf-8");
         String name = request.getParameter("name");
-        String number = request.getParameter("phone");
+        String number = request.getParameter("tel");
         try {
             new PhoneNumberValidator().validePhoneNumber(number);
             request.setAttribute("name", name);
@@ -33,6 +33,7 @@ public class DonBusLine extends HttpServlet{
         catch (NumberParseException e){
             response.setContentType("text/html;charset=utf-8");
             request.getRequestDispatcher("/invalidPhoneNumber.jsp").forward(request, response);
+            System.out.println(number);
             System.out.println("NumberParseException");
         }
         catch (PhoneNumberValidator.InvalidPhoneNumberException e){

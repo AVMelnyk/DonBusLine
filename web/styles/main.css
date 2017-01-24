@@ -221,3 +221,18 @@ form input:focus {
 .datacaption{
     font-size: 24px;
 }
+/*js validation*/
+.callback__notification {
+    display: none;
+}
+
+.callback__tel input {
+    background-color: white;
+}
+
+.callback_invalid-tel .callback__notification {
+    display: block;
+}
+.callback_invalid .callback__tel input {
+    background-color: red;
+}

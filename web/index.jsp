@@ -83,18 +83,28 @@
     </table>
 </section>
 <section id='form_section'>
-    <form method="POST" action="${path}/index"/>
-    <table="dataform" classborder ="0"><tr><td valign="top">
-    <caption class="datacaption">Пожалуйста, введите ваши данные. Мы вам перезвоним.</caption>
-    <br>
-    <td>Ваше имя:</td> <td valign="top">
-        <input type="text" name="name" size="20">
-    </td></tr><tr><td valign="top">
-    Телефон: </td> <td valign="top">
-    <input type="text" name="phone" size="20">
-</td></tr><tr><td valign="top">
-    <input type="submit" value="Отправить"></td></tr>
-    </table></form>
+    <div id="app">
+			<form id="f" method="POST" action="${path}/index" class="callback callback_pristine">
+			<table>
+			<caption class="datacaption">Пожалуйста, введите ваши данные. Мы вам перезвоним.</caption>
+			<tr>
+				<td>Имя:</td>
+				<td class="callback__name"><input name="name" placeholder="Имя"/></td>
+			</tr>
+			<tr>
+				<td>Телефон:</td>
+				<td class="callback__tel"><input type="tel" name="tel" placeholder="Телефон" /></td>
+			</tr>
+		</table>
+		<div class="callback__notification">
+            <p>Пожалуйста, введите телефон, по которому мы сможем с вами связаться.</p>
+        </div><div>
+            <input type="submit" value="Отправить"/>
+        </div>
+		</form>
+		</div>
 </section>
+<script src="index.js"></script>
+<script src="libphonenumber-js.min.js"></script>
 </body>
 </html>
