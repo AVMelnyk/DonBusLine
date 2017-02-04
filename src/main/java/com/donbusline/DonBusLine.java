@@ -15,7 +15,8 @@ public class DonBusLine extends HttpServlet{
         String path = request.getContextPath();
         response.setContentType("text/html;charset=utf-8");
         request.setAttribute("path",path);
-        request.getRequestDispatcher("/index.jsp").forward(request, response);
+        request.setAttribute("severity", "empty");
+        request.getRequestDispatcher("/welcome.jsp").forward(request, response);
 
     }
     @Override
@@ -23,23 +24,19 @@ public class DonBusLine extends HttpServlet{
         request.setCharacterEncoding("utf-8");
         String name = request.getParameter("name");
         String number = request.getParameter("tel");
-        try {
-            new PhoneNumberValidator().validePhoneNumber(number);
+
+        CallbackModel model = new CallbackModel(name,number);
+        response.setContentType("text/html;charset=utf-8");
+        if (model.validePhoneNumber(number)) {
             request.setAttribute("name", name);
-            new CallbackModel(name, number).notifyRecipient();
-            response.setContentType("text/html;charset=utf-8");
-            request.getRequestDispatcher("/main.jsp").forward(request, response);
+            model.notifyRecipient();
+            request.setAttribute("severity", "success");
+            request.setAttribute("message", "Ожидайте, мы вам перезвоним, " + name + ".");
+        } else {
+            request.setAttribute("severity", "warning");
+            request.setAttribute("message", "Введите корректный номер телефона.");
+            System.out.println("Invalid Number");
         }
-        catch (NumberParseException e){
-            response.setContentType("text/html;charset=utf-8");
-            request.getRequestDispatcher("/invalidPhoneNumber.jsp").forward(request, response);
-            System.out.println(number);
-            System.out.println("NumberParseException");
-        }
-        catch (PhoneNumberValidator.InvalidPhoneNumberException e){
-            response.setContentType("text/html;charset=utf-8");
-            request.getRequestDispatcher("/invalidPhoneNumber.jsp").forward(request, response);
-            System.out.println("Invalid Nmber");
-        }
+        request.getRequestDispatcher("/welcome.jsp").forward(request, response);
     }
 }

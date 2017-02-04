@@ -409,3 +409,39 @@ a {
 .callback_invalid .callback__notification {
 	visibility: visible;
 }
+
+.message {
+	box-sizing: border-box;
+	position: fixed;
+	top: 66px;
+	width: 100%;
+	border: 1px solid;
+	padding: 16px;
+	transform: scaleY(0);
+	transform-origin: top;
+	-webkit-transition: transform 0.26s ease;
+	-moz-transition: transform 0.26s ease;
+	-ms-transition: transform 0.26s ease;
+	-o-transition: transform 0.26s ease;
+	transition: transform 0.26s ease;
+}
+
+.message_open {
+	transform: scaleY(1);
+}
+
+.message_empty{
+	display: none;
+}
+
+.message_success {
+	background-color: #ccebc9;
+	color: #32761a;
+	border-color: #71c263;
+}
+
+.message_warning{
+	background-color: #f7d3ce;
+	color: #a80530;
+	border-color: #e08984;
+}

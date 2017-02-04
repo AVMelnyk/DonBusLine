@@ -142,6 +142,11 @@ app.on('slide', dropRepeatingCalls(function(slideId) {
     app.reachGoal('ENTER_SLIDE', { 
         slide: slideId || 'welcome'
     });
+    if (slideId) {
+        Array.prototype.forEach.call(document.querySelectorAll('.message'), function(message) {
+            message.classList.remove('message_open');
+        });
+    }
     if('callback' === slideId) {
         // TODO: BEM Modification input_autofocus
         document.getElementById('f').name.focus();
@@ -156,4 +161,7 @@ Array.prototype.forEach.call(document.querySelectorAll('.hero__call-to-action'),
     button.addEventListener('click', function(e) {
         app.reachGoal('CALL_TO_ACTION_CLICKED');
     });
+});
+Array.prototype.forEach.call(document.querySelectorAll('.message'), function(message) {
+    message.classList.add('message_open');
 });

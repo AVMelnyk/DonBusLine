@@ -30,6 +30,7 @@
         <li class="nav__item"><a href="#callback">Перезвоним</a></li>
     </nav>
 </header>
+<div class="message message_${severity}">${message}</div>
 <div class="slides">
     <section class="slides__slide slides__slide_n1 hero">
         <div class="hero__container">
@@ -118,7 +119,7 @@
         </div>
     </section>
     <section class="slides__slide slides__slide_n4 slides__callback" id="callback">
-        <form id="f" method="POST" action="${path}/index" class="callback callback_pristine callback__form">
+        <form id="f" method="POST" action="${path}" class="callback callback_pristine callback__form">
             <h2 class="callback__headline">Пожалуйста, введите ваши данные.</h2>
             <h2 class="callback__headline">Мы вам перезвоним.</h2>
             <div class="callback__form-row">
