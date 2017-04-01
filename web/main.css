@@ -323,7 +323,9 @@ a {
 .slides__slide_n1 {
 	background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(images/slide1.jpg);
 }
-
+.slides__slide_n2 {
+	background-image: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .3)), url(images/slide2.jpg);
+}
 .slides__slide_n3 {
 	background-image: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .3)), url(images/slide3.jpg);
 	background-attachment: scroll;

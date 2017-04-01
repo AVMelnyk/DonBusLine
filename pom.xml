@@ -6,7 +6,8 @@
 
     <groupId>com.donbusline</groupId>
     <artifactId>DonBusLine</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>s</version>
+    <packaging>war</packaging>
 
     <dependencies>
         <dependency>
@@ -31,5 +32,8 @@
         </dependency>
     </dependencies>
 
+    <build>
+
+    </build>
     
 </project>

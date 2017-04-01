@@ -25,8 +25,8 @@
         <a href="/" class="nav__logo"><h1 class="logo">Don-BusLine</h1></a>
     </div>
     <nav class="nav__items">
-        <li class="nav__item"><a href="#schedule">Расписание</a></li>
-        <li class="nav__item"><a href="#tickets">Билеты</a></li>
+        <li class="nav__item"><a href="#schedule">Расписание из РФ</a></li>
+        <li class="nav__item"><a href="#tickets">Расписание из Украины</a></li>
         <li class="nav__item"><a href="#callback">Перезвоним</a></li>
     </nav>
 </header>
@@ -36,169 +36,182 @@
         <div class="hero__container">
             <h1 class="hero__item">Комфортные перевозки пассажиров из Донбасса в города России!</h1>
             <a href="#callback" class="button button_action hero__call-to-action hero__item">Заказать обратный звонок</a>
+            <h2 class="hero__item"> +89850065536 +896686119274</h2>
+            <h2 class="hero__item"> +380930622541 +3806606633337</h2>
+            <h2 class="hero__item"> Viber +89852728236</h2>
         </div>
     </section>
+
     <section class="slides__slide slides__slide_n2 schedule" id="schedule">
-        <h2 class="schedule__table-headline">Расписание</h2>
+        <h2 class="schedule__table-headline">Расписание из РФ</h2>
         <table class="table schedule__table">
             <thead>
-                <tr>
-                    <th>Маршрут</th>
-                    <th>Дни недели</th>
-                    <th>Время отправления</th>
-                </tr>
+            <tr>
+                <th>Маршрут</th>
+                <th>Дни недели</th>
+                <th>Время отправления</th>
+                <th>Стоимость, руб.</th>
+            </tr>
             </thead><tbody>
-				<tr>
-					<td>Москва-Донецк</td>
-					<td>ежедневно</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>Москва-Макеевка</td>
-					<td>ежедневно</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>Москва-Харцызск</td>
-					<td>ежедневно</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>Москва-Зугрес</td>
-					<td>ежедневно</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>Москва-Шахтерск</td>
-					<td>ежедневно</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>Москва-Торез</td>
-					<td>ежедневно</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>Москва-Снежное</td>
-					<td>ежедневно</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>Москва-Красный Луч</td>
-					<td>ежедневно</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>Москва-Антрацит</td>
-					<td>ежедневно</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>Москва-Енакиево</td>
-					<td>ежедневно</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>Москва-Горловка</td>
-					<td>ежедневно</td>
-					<td></td>
-				</tr>
-            </tbody>
+        <tr>
+            <td>Москва-Донецк</td>
+            <td>ежедневно</td>
+            <td>13:00, 14:00, 15:00, 18:00</td>
+            <td>2500</td>
+        </tr>
+        <tr>
+            <td>Москва-Макеевка</td>
+            <td>ежедневно</td>
+            <td>13:00, 14:00, 15:00, 18:00</td>
+            <td>2500</td>
+        </tr>
+        <tr>
+            <td>Москва-Харцызск</td>
+            <td>ежедневно</td>
+            <td>13:00, 14:00, 15:00, 18:00</td>
+            <td>2500</td>
+        </tr>
+        <tr>
+            <td>Москва-Зугрес</td>
+            <td>ежедневно</td>
+            <td>13:00, 14:00, 15:00, 18:00</td>
+            <td>2500</td>
+        </tr>
+        <tr>
+            <td>Москва-Шахтерск</td>
+            <td>ежедневно</td>
+            <td>13:00, 14:00, 15:00, 18:00</td>
+            <td>2500</td>
+        </tr>
+        <tr>
+            <td>Москва-Торез</td>
+            <td>ежедневно</td>
+            <td>13:00, 14:00, 15:00, 18:00</td>
+            <td>2500</td>
+        </tr>
+        <tr>
+            <td>Москва-Снежное</td>
+            <td>ежедневно</td>
+            <td>13:00, 14:00, 15:00, 18:00</td>
+            <td>2000</td>
+        </tr>
+        <tr>
+            <td>Москва-Красный Луч</td>
+            <td>ежедневно</td>
+            <td>13:00</td>
+            <td>2000</td>
+        </tr>
+        <tr>
+            <td>Москва-Антрацит</td>
+            <td>ежедневно</td>
+            <td>13:00</td>
+            <td>2000</td>
+        </tr>
+        <tr>
+            <td>Москва-Енакиево</td>
+            <td>ежедневно</td>
+            <td>13:00, 14:00</td>
+            <td>2500</td>
+        </tr>
+        <tr>
+            <td>Москва-Горловка</td>
+            <td>ежедневно</td>
+            <td>13:00, 14:00</td>
+            <td>2500</td>
+        </tr>
+        <tr>
+            <td>Тула-Донецк</td>
+            <td>ежедневно</td>
+            <td>15:00, 18:00</td>
+            <td>2500</td>
+        </tr>
+        <tr>
+            <td>Воронеж-Донецк</td>
+            <td>ежедневно</td>
+            <td>19:30, 21:30</td>
+            <td>1200</td>
+        </tr>
+        </tbody>
         </table>
     </section>
     <section class="slides__slide slides__slide_n3 tickets" id="tickets">
         <div class="tickets__container">
-            <h2 class="tickets__table-headline">Цены на билеты</h2>
+            <h2 class="tickets__table-headline">Расписание из Донецка</h2>
             <table class="table tickets__table">
                 <thead>
-                    <tr>
-                        <th>Отправление</th>
-                        <th>Прибитие</th>
-                        <th>Стоимость, руб.</th>
-                        <th>Время в дороге</th>
-                    </tr>
-                </thead><tbody>
-					<tr>
-						<td>Москва</td>
-						<td>Донецк</td>
-						<td>2000 - 2500 руб.</td>
-						<td>00 ч</td>
-					</tr>
-                    <tr>
-                        <td>Донецк</td>
-                        <td>Москва</td>
-                        <td>1800 руб.</td>
-                        <td>00 ч</td>
-                    </tr><tr>
-                        <td>Горловка</td>
-                        <td>Москва</td>
-                        <td>1800 руб.</td>
-                        <td>00 ч</td>
-                    </tr><tr>
-                        <td>Енакиево</td>
-                        <td>Москва</td>
-                        <td>0000 руб.</td>
-                        <td>00 ч</td>
-                    </tr><tr>
-                        <td>Макеевка</td>
-                        <td>Москва</td>
-                        <td>0000 руб.</td>
-                        <td>00 ч</td>
-                    </tr><tr>
-                        <td>Шахтёрск</td>
-                        <td>Москва</td>
-                        <td>0000 руб.</td>
-                        <td>00 ч</td>
-                    </tr>
-                </tbody><tbody>
-                    <tr>
-                        <td>Новошахтинск</td>
-                        <td>Москва</td>
-                        <td>0000 руб.</td>
-                        <td>00 ч</td>
-                    </tr><tr>
-                        <td>Воронеж</td>
-                        <td>Москва</td>
-                        <td>000 руб.</td>
-                        <td>00 ч</td>
-                    </tr>
-					<tr>
-						<td>Харцызск</td>
-						<td>Москва</td>
-						<td>0000 руб.</td>
-						<td>00 ч</td>
-					</tr>
-					<tr>
-						<td>Зугрес</td>
-						<td>Москва</td>
-						<td>0000 руб.</td>
-						<td>00 ч</td>
-					</tr>
-					<tr>
-						<td>Торез</td>
-						<td>Москва</td>
-						<td>0000 руб.</td>
-						<td>00 ч</td>
-					</tr>
-					<tr>
-						<td>Снежное</td>
-						<td>Москва</td>
-						<td>0000 руб.</td>
-						<td>00 ч</td>
-					</tr>
-					<tr>
-						<td>Красный Луч</td>
-						<td>Москва</td>
-						<td>0000 руб.</td>
-						<td>00 ч</td>
-					</tr>
-					<tr>
-						<td>Антрацит</td>
-						<td>Москва</td>
-						<td>0000 руб.</td>
-						<td>00 ч</td>
-					</tr>
-                </tbody>
+                <tr>
+                    <th>Маршрут</th>
+                    <th>Дни недели</th>
+                    <th>Время отправления</th>
+                    <th>Стоимость, руб.</th>
+                </tr>
+                </thead>
+            <tr>
+                <td>Донецк-Москва</td>
+                <td>ежедневно</td>
+                <td>7:00, 9:00, 11:00</td>
+                <td>1800</td>
+            </tr>
+            <tr>
+                <td>Макеевка-Москва</td>
+                <td>ежедневно</td>
+                <td>7:00, 9:00, 11:00</td>
+                <td>1800</td>
+            </tr>
+            <tr>
+                <td>Зугрес-Москва</td>
+                <td>ежедневно</td>
+                <td>7:00, 9:00, 11:00</td>
+                <td>1800</td>
+            </tr>
+            <tr>
+                <td>Харцызск-Москва</td>
+                <td>ежедневно</td>
+                <td>7:00, 9:00, 11:00</td>
+                <td>1800</td>
+            </tr>
+            <tr>
+                <td>Шахтерск - Москва</td>
+                <td>ежедневно</td>
+                <td>7:00, 9:00, 11:00</td>
+                <td>1800</td>
+            </tr>
+            <tr>
+                <td>Торез-Москва</td>
+                <td>ежедневно</td>
+                <td>7:00, 9:00, 11:00</td>
+                <td>1800</td>
+            </tr>
+                <tr>
+                    <td>Снежное-Москва</td>
+                    <td>ежедневно</td>
+                    <td>7:00, 9:00, 11:00</td>
+                    <td>1700</td>
+                </tr>
+                <tr>
+                    <td>Красный Луч - Москва</td>
+                    <td>ежедневно</td>
+                    <td>7:00, 9:00, 11:00</td>
+                    <td>1700</td>
+                </tr>
+                <tr>
+                    <td>Антроцит - Москва</td>
+                    <td>ежедневно</td>
+                    <td>7:00, 9:00, 11:00</td>
+                    <td>1700</td>
+                </tr>
+                <tr>
+                    <td>Горловка - Москва </td>
+                    <td>ежедневно</td>
+                    <td>7:00</td>
+                    <td>1800</td>
+                </tr>
+                <tr>
+                    <td>Енакиево - Москва</td>
+                    <td>ежедневно</td>
+                    <td>7:30</td>
+                    <td>1800</td>
+                </tr>
             </table>
         </div>
     </section>
@@ -217,8 +230,8 @@
             <div class="callback__notification">
                 <p>Пожалуйста, введите телефон, по которому мы сможем с вами связаться.</p>
             </div><div>
-                <input type="submit" class="button button_action" value="Отправить"/>
-            </div>
+            <input type="submit" class="button button_action" value="Отправить"/>
+        </div>
         </form>
     </section>
 </div>
@@ -227,7 +240,7 @@
 </footer>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
-(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter40378235 = new Ya.Metrika({ id:40378235, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
+    (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter40378235 = new Ya.Metrika({ id:40378235, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/40378235" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
