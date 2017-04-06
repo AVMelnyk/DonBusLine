@@ -27,7 +27,7 @@
     <nav class="nav__items">
         <li class="nav__item"><a href="#schedule">Расписание из РФ</a></li>
         <li class="nav__item"><a href="#tickets">Расписание из Украины</a></li>
-        <li class="nav__item"><a href="#callback">Перезвоним</a></li>
+        <li class="nav__item"><a href="#callback">Заказать билет онлайн</a></li>
     </nav>
 </header>
 <div class="message message_${severity}">${message}</div>
@@ -35,7 +35,7 @@
     <section class="slides__slide slides__slide_n1 hero">
         <div class="hero__container">
             <h1 class="hero__item">Комфортные перевозки пассажиров из Донбасса в города России!</h1>
-            <a href="#callback" class="button button_action hero__call-to-action hero__item">Заказать обратный звонок</a>
+            <a href="#callback" class="button button_action hero__call-to-action hero__item">Заказать билет онлайн</a>
             <h2 class="hero__item"> +89850065536 +896686119274</h2>
             <h2 class="hero__item"> +380930622541 +3806606633337</h2>
             <h2 class="hero__item"> Viber +89852728236</h2>
@@ -146,42 +146,42 @@
                     <th>Стоимость, руб.</th>
                 </tr>
                 </thead>
-            <tr>
-                <td>Донецк-Москва</td>
-                <td>ежедневно</td>
-                <td>7:00, 9:00, 11:00</td>
-                <td>1800</td>
-            </tr>
-            <tr>
-                <td>Макеевка-Москва</td>
-                <td>ежедневно</td>
-                <td>7:00, 9:00, 11:00</td>
-                <td>1800</td>
-            </tr>
-            <tr>
-                <td>Зугрес-Москва</td>
-                <td>ежедневно</td>
-                <td>7:00, 9:00, 11:00</td>
-                <td>1800</td>
-            </tr>
-            <tr>
-                <td>Харцызск-Москва</td>
-                <td>ежедневно</td>
-                <td>7:00, 9:00, 11:00</td>
-                <td>1800</td>
-            </tr>
-            <tr>
-                <td>Шахтерск - Москва</td>
-                <td>ежедневно</td>
-                <td>7:00, 9:00, 11:00</td>
-                <td>1800</td>
-            </tr>
-            <tr>
-                <td>Торез-Москва</td>
-                <td>ежедневно</td>
-                <td>7:00, 9:00, 11:00</td>
-                <td>1800</td>
-            </tr>
+                <tr>
+                    <td>Донецк-Москва</td>
+                    <td>ежедневно</td>
+                    <td>7:00, 9:00, 11:00</td>
+                    <td>1800</td>
+                </tr>
+                <tr>
+                    <td>Макеевка-Москва</td>
+                    <td>ежедневно</td>
+                    <td>7:00, 9:00, 11:00</td>
+                    <td>1800</td>
+                </tr>
+                <tr>
+                    <td>Зугрес-Москва</td>
+                    <td>ежедневно</td>
+                    <td>7:00, 9:00, 11:00</td>
+                    <td>1800</td>
+                </tr>
+                <tr>
+                    <td>Харцызск-Москва</td>
+                    <td>ежедневно</td>
+                    <td>7:00, 9:00, 11:00</td>
+                    <td>1800</td>
+                </tr>
+                <tr>
+                    <td>Шахтерск - Москва</td>
+                    <td>ежедневно</td>
+                    <td>7:00, 9:00, 11:00</td>
+                    <td>1800</td>
+                </tr>
+                <tr>
+                    <td>Торез-Москва</td>
+                    <td>ежедневно</td>
+                    <td>7:00, 9:00, 11:00</td>
+                    <td>1800</td>
+                </tr>
                 <tr>
                     <td>Снежное-Москва</td>
                     <td>ежедневно</td>
@@ -218,20 +218,108 @@
     <section class="slides__slide slides__slide_n4 slides__callback" id="callback">
         <form id="f" method="POST" action="${path}" class="callback callback_pristine callback__form">
             <h2 class="callback__headline">Пожалуйста, введите ваши данные.</h2>
-            <h2 class="callback__headline">Мы вам перезвоним.</h2>
             <div class="callback__form-row">
-                <label for="callback__name" class="callback__form-label">Имя:</label>
-                <input name="name" id="callback__name" class="callback__form-field callback__name input" placeholder="Имя"/>
-            </div>
-            <div class="callback__form-row">
-                <label for="callback__tel" class="callback__form-label">Телефон:</label>
-                <input type="tel" name="tel" id="callback__tel" class="callback__form-field callback__tel input" placeholder="Телефон" />
+                <table>
+                    <tr>
+                        <td>
+                            <div class="callback__form-row">
+                                <label for="callback__name" class="callback__form-label">Откуда*:</label>
+                                <select class="callback__form-field callback__name input" name="start_point" size="1">
+                                    <option value="Москва">Москва</option>
+                                    <option value="Донецк">Донецк</option>
+                                    <option value="Макеевка">Макеевка</option>
+                                    <option value="Харцызск">Харцызск</option>
+                                    <option value="Зугрес">Зугрес</option>
+                                    <option value="Шахтерск">Шахтерск</option>
+                                    <option value="Торез">Торез</option>
+                                    <option value="Снежное">Снежное</option>
+                                    <option value="Красный Луч">Красный Луч</option>
+                                    <option value="Антроцит">Антроцит</option>
+                                    <option value="Горловка">Горловка</option>
+                                    <option value="Енакиево">Енакиево</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="callback__form-row">
+                                <label for="callback__name" class="callback__form-label">Куда*:</label>
+                                <select  class="callback__form-field callback__name input" name="end_point" size="1">
+                                    <option value="Москва">Москва</option>
+                                    <option value="Донецк">Донецк</option>
+                                    <option value="Макеевка">Макеевка</option>
+                                    <option value="Харцызск">Харцызск</option>
+                                    <option value="Зугрес">Зугрес</option>
+                                    <option value="Шахтерск">Шахтерск</option>
+                                    <option value="Торез">Торез</option>
+                                    <option value="Снежное">Снежное</option>
+                                    <option value="Красный Луч">Красный Луч</option>
+                                    <option value="Антроцит">Антроцит</option>
+                                    <option value="Горловка">Горловка</option>
+                                    <option value="Енакиево">Енакиево</option>
+                                </select>
+                            </div>
+                         </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="callback__form-row">
+                                <label for="callback__name" class="callback__form-label">Дата*:</label>
+                                <input type="date" name="data"   class="callback__form-field callback__name input" placeholder="Дата" />
+                            </div>
+                        </td>
+                        <td>
+                            <div class="callback__form-row">
+                                <label for="callback__name" class="callback__form-label">Время*:</label>
+                                <input name="time" type="time"  class="callback__form-field callback__name input" value="00:00" />
+                            </div>
+                        </td>
+                    <tr>
+                    <tr>
+                    <td>
+                        <div class="callback__form-row">
+                            <label for="callback__name" class="callback__form-label">Фамилия*:</label>
+                            <input name="surname"  class="callback__form-field callback__name input" placeholder="Фамилия"/>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="callback__form-row">
+                            <label for="callback__name" class="callback__form-label">Имя*:</label>
+                            <input name="name" id="callback__name" class="callback__form-field callback__name input" placeholder="Имя"/>
+                        </div>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="callback__form-row">
+                                <label for="callback__name" class="callback__form-label">Дата рождения*:</label>
+                                <input type="date" name="birthdate"   class="callback__form-field callback__name input" placeholder="Дата" />
+                            </div>
+                        </td>
+                        <td>
+                            <div class="callback__form-row">
+                                <label for="callback__tel" class="callback__form-label">Телефон*:</label>
+                                <input type="tel" name="tel" id="callback__tel" class="callback__form-field callback__tel input" placeholder="Телефон" />
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="callback__form-row">
+                                <label for="callback__name" class="callback__form-label">Коментарий:</label>
+                                <input name="comment"  class="callback__form-field callback__name input" placeholder="Коментарий"/>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
             </div>
             <div class="callback__notification">
                 <p>Пожалуйста, введите телефон, по которому мы сможем с вами связаться.</p>
-            </div><div>
-            <input type="submit" class="button button_action" value="Отправить"/>
-        </div>
+            </div>
+            <div>
+                <input type="submit" class="button button_action" value="Заказать билет"/>
+            </div>
         </form>
     </section>
 </div>

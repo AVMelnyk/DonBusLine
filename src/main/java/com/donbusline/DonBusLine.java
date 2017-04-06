@@ -22,19 +22,25 @@ public class DonBusLine extends HttpServlet{
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
         request.setCharacterEncoding("utf-8");
+        String start_point = request.getParameter("start_point");
+        String end_point = request.getParameter("end_point");
+        String date = request.getParameter("data");
+        String birthdate = request.getParameter("birthdate");
+        String time = request.getParameter("time");
+        String surname = request.getParameter("surname");
         String name = request.getParameter("name");
         String number = request.getParameter("tel");
-
-        CallbackModel model = new CallbackModel(name,number);
+        String comment = request.getParameter("comment");
+        CallbackModel model = new CallbackModel(start_point, end_point, surname, name, birthdate, number, date, time, comment);
         response.setContentType("text/html;charset=utf-8");
-        if (model.validePhoneNumber(number)) {
+        if (model.validePhoneNumber(number)&&date.length()>0&&birthdate.length()>0&& time.length()>0&&surname.length()>0&&name.length()>0 ) {
             request.setAttribute("name", name);
             model.notifyRecipient();
             request.setAttribute("severity", "success");
             request.setAttribute("message", "Ожидайте, мы вам перезвоним, " + name + ".");
         } else {
             request.setAttribute("severity", "warning");
-            request.setAttribute("message", "Введите корректный номер телефона.");
+            request.setAttribute("message", "Для заказа билета заполните обязательные поля и введите корректный номер телефона.");
             System.out.println("Invalid Number");
         }
         request.getRequestDispatcher("/welcome.jsp").forward(request, response);
